@@ -14,6 +14,17 @@
 
 ---
 
+## 🔍 Error Handling & Validation
+
+DCL Live Bridge uses a **Line-by-Line Pre-Parsing Method** to validate your code before it reaches the AutoCAD DCL engine. 
+
+### How it works:
+- **Brace Tracking:** The tool counts `{` and `}` symbols. If they are not balanced, it prevents the preview to avoid a "Load Dialog Failure."
+- **Semicolon Detection:** It scans every attribute assignment (lines containing `=`). If a semicolon is missing at the end of the line, it alerts you with the **exact line number** found in your text editor.
+- **Safety Loop Prevention:** It ensures that an exit mechanism (like `ok_only;` or `is_cancel = true;`) is present. This prevents "Modal Lockout," where a dialog appears with no way to close it, forcing a CAD restart.
+
+---
+
 ## 🛠️ Installation
 
 1. Download `DCL_Live_Bridge.lsp`.
