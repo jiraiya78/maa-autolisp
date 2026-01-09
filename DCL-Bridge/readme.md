@@ -31,7 +31,7 @@ DCL Live Bridge uses a **Line-by-Line Pre-Parsing Method** to validate your code
 
 ## 🛠️ Installation
 
-1. Download `DCL_Live_Bridge.lsp`.
+1. Download `DCLBridge.lsp`.
 2. Drag and drop the file into AutoCAD or use the `APPLOAD` command.
 3. Type **`DCLB`** to start the program.
 
